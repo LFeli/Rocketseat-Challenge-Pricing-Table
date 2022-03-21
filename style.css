@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root{
+   /* === Colors === */
+   --yellow: #ffcc29;
+   --blue: #1d539e;
+   --gray: #828799;
+   --page-background: #f9fbfc;
+
+   --font: 'Open Sans', sans-serif;
+
+}
+
+/* === Base === */
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: var(--font);
+}
+
+body{
+   background-color: var(--page-background);
+   width: 100vw;
+   height: 100vh;
+}
+
+a{
+   text-decoration: none;
+}
+
+ul{
+   list-style: none;
+}
+
+main{
+   background: var(--blue);
+   height: 50vh;
+}
+
+
+.flex{
+   display: flex;
+   gap:1.25rem;
+}
+
+.bg-blue{
+   background: var(--blue);
+   width: 100%;
+}
+
+/* === Text === */
+
+.text{
+   flex-direction: column;
+   max-width: 553px;
+   margin: 0 auto;
+}
+
+.tittle{
+   font: 700 3rem var(--font);
+   -webkit-font-smoothing: antialiased;
+   color: var(--page-background);
+   text-align: center;
+   margin-top: 6.25rem;
+   
+}
+
+.subtittle{
+   font: 400 1.125rem var(--font);
+   -webkit-font-smoothing: antialiased;
+   color: var(--page-background);
+   text-align: center;
+
+}
+
+/* === Cards === */
+.cards{
+   background: var(--page-background);
+   border-radius: 0.5rem;
+   box-shadow: 0px 1px 2px hsla(228, 24%, 64%, 0.25);
+   max-width: 355px;
+   margin-top: 4rem;
+}
+
+.card.flex{
+   flex-direction: column;
+
+}
